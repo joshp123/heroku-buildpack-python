@@ -1,5 +1,22 @@
 #!/usr/bin/env bash
+
+# Syntax sugar.
+BIN_DIR=$(cd "$(dirname "$0")" || return; pwd) # absolute path
+
+# shellcheck source=bin/utils
+source "$BIN_DIR/utils"
+
+# Locale support for Pipenv.
+export LC_ALL=C.UTF-8
+export LANG=C.UTF-8
+
+echo "---> ls"
 ls
+echo "---> whoami"
 whoami
+echo "---> which python"
 which python
+echo "---> env"
+env
+echo "---> test"
 python setup.py test
