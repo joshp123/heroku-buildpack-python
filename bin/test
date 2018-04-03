@@ -16,7 +16,14 @@ echo "---> whoami"
 whoami
 echo "---> which python"
 which python
+
+echo "---> which gunicorn"
+which gunicorn
+
 echo "---> env"
 env
 echo "---> test"
-python setup.py test
+python setup.py test || true
+
+echo "---> ls eggs"
+ls /app/.eggs/
