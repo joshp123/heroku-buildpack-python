@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+echo "hello from test compile"
+
 # Syntax sugar.
 BIN_DIR=$(cd "$(dirname "$0")" || return; pwd) # absolute path
 
