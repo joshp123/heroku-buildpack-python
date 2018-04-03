@@ -23,7 +23,4 @@ which gunicorn
 echo "---> env"
 env
 echo "---> test"
-python setup.py test || true
-
-echo "---> ls eggs"
-ls /app/.eggs/
+python setup.py test
